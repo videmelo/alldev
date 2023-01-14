@@ -1,0 +1,33 @@
+.dropdown {
+    width: 100%;
+    position: relative;
+    &-button {
+        width: 100%;
+        &:focus{
+            outline: none;
+        }
+    }
+    
+    &-item{
+        width: 100%;
+        border-radius: 0;
+        &:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        &:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        &--selected {
+            background-color: #646cff;
+            color: #fff;
+        }
+    }
+
+    &-content {
+        width: 100%;
+        margin-top: 4px;
+        border-radius: 8px;
+        overflow: hidden;
+        position: absolute;
+    }
+}
